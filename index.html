@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" id="www-csskarma-com" class="no-js">
+<head>
+    <title></title>
+    
+    <!--meta cluster-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <style>
+    
+        html {
+            background: #eee;
+        }
+    
+        body {
+            padding: 30px;
+            width: 400px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .row {
+            clear: both;
+            padding: 12px 0;
+        }
+        
+        label {
+            display: block;
+            cursor: pointer;
+        }
+        
+        select {
+            width: 300px;
+            display: block;
+            line-height: 30px;
+        }
+        
+        select:focus {
+            outline: 0;
+        }
+        
+        .s-wrap {
+            font: 12px/1 Sans-serif;
+            margin-top: 5px;
+            display: inline-block;
+            color: #444;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5);
+            
+        }
+        
+        .s-inner {
+            background: #eee;
+            line-height: 1.7;
+            border-radius: 4px;
+            -moz-transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            transition: all linear .1s;
+            -moz-box-shadow: 0 1px 0 #888;
+            box-shadow: 0 1px 0 #888;
+        }
+        
+        .s-style {
+            padding: 6px 12px;
+            display: block;
+            width: 100%;
+        }
+        
+        .s-inner:after {
+            content: "\25BC";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 36px;
+            height: 32px;
+            overflow: hidden;
+            text-align: center;
+            width: 30px;
+            background: #bbb;
+            border-radius: 0 4px 4px 0;
+            -moz-transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            transition: all linear .1s;
+        }
+        
+        .s-inner:hover {
+            background: #ccc;
+            -moz-box-shadow: 0 -1px 0 #666;
+            box-shadow: 0 -1px 0 #666;
+        }
+        
+        .s-inner:hover:after {
+            background: #999;
+            cursor: pointer;
+            color: #eee;
+        }
+        
+        .focus {
+            background: #ddd;
+        }
+        
+        .s-focus {
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+<form action="" method="get">
+    
+    <div class="row">
+        <label for="bread">Types of bread</label>
+        <select id="bread" name="bread">
+            <option selected disabled>Please select a type of bread</option>
+            <option value="0">White</option>
+            <option value="1">Wheat</option>
+            <option value="2">Rye</option>
+            <option value="3">Marble Rye</option>
+            <option value="4">Whole Grain</option>
+            <option value="5">Multigrain</option>
+        </select>
+    </div><!--/.row-->
+    
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="select.js"></script>
+
+</body>
+</html>
